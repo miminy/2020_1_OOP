@@ -59,5 +59,5 @@ char* ReadFromFile2(const char* filename, size_t numChars) {
 
 }
 int main() {
-    ReadFromFile("C:\\Users\\mimin\\Documents\\text_top15.txt", 20);
+    ReadFromFile2("C:\\Users\\mimin\\Documents\\text_top15.txt", 20);
 }

@@ -5,6 +5,7 @@ class MyVector {
 	int* p;
 	int size;
 public:
+	/*
 	MyVector() {
 		p = new int[100];
 		size = 100;
@@ -13,15 +14,15 @@ public:
 		p = new int[n];
 		size = n;
 	}
-	/*
+	*/
 
-		//이곳에 디폴트 매개변수를 가진 생성자 작성하라
-		MyVector(int n=100) {
+	//이곳에 디폴트 매개변수를 가진 생성자 작성하라
+	MyVector(int n=100) {
 		p = new int [n];
 		size = n;
 	}
 
-	*/
+	
 	~MyVector() { delete[] p; }
 };
 

@@ -9,6 +9,7 @@ int raiseToPower(int base, int exponent) {
 	}   
 	return result;  // return type은 function의 type과같아야함 
 }
+
 int main() {
 	int threeExpFour = raiseToPower(3, 4);  // function invocation 
 	cout << "3^4 is " << threeExpFour << endl;   
@@ -18,6 +19,22 @@ int main() {
 	cout << "12^10 is " << twelveExpTen << endl;   return 0; 
 }
 */
+void raiseToPower(int base, int exponent) {
+	// function declaration 
+	int result = 1;
+	for (int i = 0; i < exponent; i = i + 1) {
+		result = result * base;
+	}
+	cout << base << "^" << exponent << "is " << result << endl;
+	//return result;  // return type은 function의 type과같아야함 
+}
+int main() {
+	raiseToPower(3, 4);
+	raiseToPower(6, 5);
+	raiseToPower(12, 10);
+	return 0;
+}
+/*
 int main() {  
 	int threeExpFour = 1;   
 	for (int i = 0; i < 4; i = i + 1) {     
@@ -36,3 +53,4 @@ int main() {
 	cout << "12^10 is " << twelveExpTen << endl;   
 	return 0;
 }
+*/
